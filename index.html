@@ -1,0 +1,2464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ Founds Associates - Market Expansion Strategy</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A192F',
+                        secondary: '#000000'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0A192F 0%, #1a365d 50%, #000000 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(10, 25, 47, 0.3);
+        }
+        .section-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        .section-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 50%;
+            background: #64748b;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+            left: 0;
+        }
+    </style>
+</head>
+<body class="bg-primary text-white min-h-screen">
+    <header class="fixed top-0 w-full bg-primary/90 backdrop-blur-sm z-50 border-b border-slate-700">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 flex items-center justify-center bg-slate-600 rounded-lg">
+                        <i class="ri-building-line text-xl text-white"></i>
+                    </div>
+                    <h1 class="text-xl font-bold text-white"> <div class="logo text-2xl text-black"><img src="chrisfounds.png" height="80" width="120" /></div></h1>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#overview" class="nav-link text-slate-300 hover:text-white">Overview</a>
+                    <a href="#services" class="nav-link text-slate-300 hover:text-white">Services</a>
+                    <a href="#analysis" class="nav-link text-slate-300 hover:text-white">Market Analysis</a>
+                    <a href="#strategy" class="nav-link text-slate-300 hover:text-white">Strategy</a>
+                    <a href="#roadmap" class="nav-link text-slate-300 hover:text-white">Roadmap</a>
+                </nav>
+                <button class="md:hidden w-8 h-8 flex items-center justify-center">
+                    <i class="ri-menu-line text-xl text-white"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section id="hero" class="gradient-bg min-h-screen flex items-center relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div style="background-image: url('https://readdy.ai/api/search-image?query=modern%20city%20infrastructure%20with%20digital%20networks%2C%20highways%2C%20smart%20buildings%2C%20technology%20overlay%2C%20professional%20consulting%20environment%2C%20dark%20blue%20tones%2C%20futuristic%20urban%20planning%2C%20connectivity%20lines%2C%20data%20visualization%20elements&width=1920&height=1080&seq=hero001&orientation=landscape'); background-size: cover; background-position: center; width: 100%; height: 100%;"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 py-20 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                        <h1 class="text-5xl lg:text-6xl font-bold leading-tight">
+                            Strategic Market <span class="text-slate-400">Expansion</span> Analysis
+                        </h1>
+                        <p class="text-xl text-slate-300 leading-relaxed">
+                            Comprehensive market analysis and implementation strategy for CJ Founds Associates' expansion across Digital Infrastructure, Highways & Transport, and Place & Connectivity sectors.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <button class="bg-slate-600 hover:bg-slate-500 text-white px-6 py-3 !rounded-button whitespace-nowrap transition-all duration-300">
+                                
+                            </button>
+                            <button class="border border-slate-500 hover:border-slate-400 text-slate-300 hover:text-white px-6 py-3 !rounded-button whitespace-nowrap transition-all duration-300">
+                                
+                            </button>
+                        </div>
+                        <div class="grid grid-cols-3 gap-8 pt-8">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-white">2016</div>
+                                <div class="text-sm text-slate-400">Established</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-white">5</div>
+                                <div class="text-sm text-slate-400">Core Services</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-white">UK</div>
+                                <div class="text-sm text-slate-400">Market Focus</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="bg-slate-800/50 backdrop-blur-sm p-8 rounded-2xl border border-slate-700">
+                            <h3 class="text-2xl font-bold mb-6">Market Position Overview</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-300">Digital Infrastructure</span>
+                                    <div class="w-32 bg-slate-700 rounded-full h-2">
+                                        <div class="bg-slate-400 h-2 rounded-full w-3/4"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-300">Highways & Transport</span>
+                                    <div class="w-32 bg-slate-700 rounded-full h-2">
+                                        <div class="bg-slate-400 h-2 rounded-full w-4/5"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-300">Place & Connectivity</span>
+                                    <div class="w-32 bg-slate-700 rounded-full h-2">
+                                        <div class="bg-slate-400 h-2 rounded-full w-2/3"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-300">Procurement Management</span>
+                                    <div class="w-32 bg-slate-700 rounded-full h-2">
+                                        <div class="bg-slate-400 h-2 rounded-full w-3/5"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-300">GIS Services</span>
+                                    <div class="w-32 bg-slate-700 rounded-full h-2">
+                                        <div class="bg-slate-400 h-2 rounded-full w-1/2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="py-20 bg-slate-900">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6">Company Overview</h2>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                        CJ Founds Associates Ltd is a dynamic independent consultancy specialising in professional and technical advisory services for public sector, central government, and private clients across the UK.
+                    </p>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 card-hover">
+                        <div class="w-12 h-12 flex items-center justify-center bg-slate-700 rounded-lg mb-6">
+                            <i class="ri-trophy-line text-xl text-slate-300"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Established Excellence</h3>
+                        <p class="text-slate-300 mb-6">Founded in 2016, building a strong reputation for delivering strategic programmes and industry-leading projects across the UK.</p>
+                        <ul class="space-y-2 text-sm text-slate-400">
+                            <li class="flex items-center"><i class="ri-check-line mr-2"></i>9+ years of experience</li>
+                            <li class="flex items-center"><i class="ri-check-line mr-2"></i>Strategic programme delivery</li>
+                            <li class="flex items-center"><i class="ri-check-line mr-2"></i>Industry-leading projects</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 card-hover">
+                        <div class="w-12 h-12 flex items-center justify-center bg-slate-700 rounded-lg mb-6">
+                            <i class="ri-map-pin-line text-xl text-slate-300"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Northwest England Base</h3>
+                        <p class="text-slate-300 mb-6">Strategically located in Northwest England, serving clients across public sector, central government, and private organizations.</p>
+                        <ul class="space-y-2 text-sm text-slate-400">
+                            <li class="flex items-center"><i class="ri-check-line mr-2"></i>Public sector expertise</li>
+                            <li class="flex items-center"><i class="ri-check-line mr-2"></i>Central government projects</li>
+                            <li class="flex items-center"><i class="ri-check-line mr-2"></i>Private client services</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 card-hover">
+                        <div class="w-12 h-12 flex items-center justify-center bg-slate-700 rounded-lg mb-6">
+                            <i class="ri-leaf-line text-xl text-slate-300"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Sustainability Focus</h3>
+                        <p class="text-slate-300 mb-6">Committed to sustainability goals, inclusive work culture, and net-zero commitment, blending innovation with civic impact.</p>
+                        <ul class="space-y-2 text-sm text-slate-400">
+                            <li class="flex items-center"><i class="ri-check-line mr-2"></i>Net-zero commitment</li>
+                            <li class="flex items-center"><i class="ri-check-line mr-2"></i>Inclusive culture</li>
+                            <li class="flex items-center"><i class="ri-check-line mr-2"></i>Innovation focus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-primary">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6">Service Portfolio Analysis</h2>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                        Comprehensive overview of our five core service areas and their market positioning for strategic expansion.
+                    </p>
+                </div>
+
+                <div class="space-y-16">
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
+                        <div class="p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 flex items-center justify-center bg-slate-700 rounded-lg mr-4">
+                                    <i class="ri-road-line text-xl text-slate-300"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold">Highways & Transportation</h3>
+                            </div>
+                            <div class="grid lg:grid-cols-2 gap-8">
+                                <div>
+                                    <p class="text-slate-300 mb-6">
+                                        Expert contract strategy, procurement support, and performance frameworks for transportation infrastructure projects. Leading initiatives in smart mobility, traffic management, and sustainable transport solutions.
+                                    </p>
+                                    <h4 class="font-bold mb-4">Key Capabilities:</h4>
+                                    <ul class="space-y-2 text-slate-400">
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Contract strategy development</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Procurement support services</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Performance framework design</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Smart mobility solutions</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Traffic management systems</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="bg-slate-900 p-6 rounded-lg">
+                                        <h4 class="font-bold mb-4">Notable Projects:</h4>
+                                        <div class="space-y-4">
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Royal Borough of Windsor & Maidenhead</h5>
+                                                <p class="text-sm text-slate-400">Comprehensive transport strategy and infrastructure development</p>
+                                            </div>
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Regional Highway Optimization</h5>
+                                                <p class="text-sm text-slate-400">Multi-modal transport integration and efficiency improvements</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6 grid grid-cols-2 gap-4">
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">£2.5M</div>
+                                                <div class="text-xs text-slate-400">Project Value</div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">15%</div>
+                                                <div class="text-xs text-slate-400">Efficiency Gain</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
+                        <div class="p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 flex items-center justify-center bg-slate-700 rounded-lg mr-4">
+                                    <i class="ri-wifi-line text-xl text-slate-300"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold">Digital Infrastructure</h3>
+                            </div>
+                            <div class="grid lg:grid-cols-2 gap-8">
+                                <div>
+                                    <p class="text-slate-300 mb-6">
+                                        Expert support on smart technologies, fibre broadband, and 5G strategy. Leading major digital transformation initiatives across the UK with focus on connectivity, smart cities, and digital inclusion.
+                                    </p>
+                                    <h4 class="font-bold mb-4">Key Capabilities:</h4>
+                                    <ul class="space-y-2 text-slate-400">
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>5G strategy development</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Fibre broadband planning</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Smart city technologies</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Digital inclusion strategies</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>IoT implementation</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="bg-slate-900 p-6 rounded-lg">
+                                        <h4 class="font-bold mb-4">Major Initiatives:</h4>
+                                        <div class="space-y-4">
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Berkshire Digital Infrastructure Group</h5>
+                                                <p class="text-sm text-slate-400">Regional digital connectivity and infrastructure development</p>
+                                            </div>
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Liverpool City Region 5GIR</h5>
+                                                <p class="text-sm text-slate-400">5G innovation and research infrastructure implementation</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6 grid grid-cols-2 gap-4">
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">£8.2M</div>
+                                                <div class="text-xs text-slate-400">Investment Value</div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">95%</div>
+                                                <div class="text-xs text-slate-400">Coverage Target</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
+                        <div class="p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 flex items-center justify-center bg-slate-700 rounded-lg mr-4">
+                                    <i class="ri-building-2-line text-xl text-slate-300"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold">Planning & Placemaking</h3>
+                            </div>
+                            <div class="grid lg:grid-cols-2 gap-8">
+                                <div>
+                                    <p class="text-slate-300 mb-6">
+                                        Integrating urban planning, active travel, and digital mobility solutions. Creating sustainable, connected communities through innovative placemaking strategies and comprehensive development frameworks.
+                                    </p>
+                                    <h4 class="font-bold mb-4">Key Capabilities:</h4>
+                                    <ul class="space-y-2 text-slate-400">
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Urban planning strategy</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Active travel integration</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Digital mobility solutions</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Community engagement</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Sustainable development</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="bg-slate-900 p-6 rounded-lg">
+                                        <h4 class="font-bold mb-4">Featured Projects:</h4>
+                                        <div class="space-y-4">
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Burgess Hill Growth Programme</h5>
+                                                <p class="text-sm text-slate-400">Comprehensive urban development and connectivity planning</p>
+                                            </div>
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Sustainable Communities Initiative</h5>
+                                                <p class="text-sm text-slate-400">Integrated planning for climate-resilient development</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6 grid grid-cols-2 gap-4">
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">12</div>
+                                                <div class="text-xs text-slate-400">Active Projects</div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">85%</div>
+                                                <div class="text-xs text-slate-400">Client Satisfaction</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
+                        <div class="p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 flex items-center justify-center bg-slate-700 rounded-lg mr-4">
+                                    <i class="ri-file-list-3-line text-xl text-slate-300"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold">Procurement Management</h3>
+                            </div>
+                            <div class="grid lg:grid-cols-2 gap-8">
+                                <div>
+                                    <p class="text-slate-300 mb-6">
+                                        Technical advisory and programme assurance services, guiding local authorities on NEC contracts, procurement governance, and comprehensive risk management frameworks.
+                                    </p>
+                                    <h4 class="font-bold mb-4">Key Capabilities:</h4>
+                                    <ul class="space-y-2 text-slate-400">
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>NEC contract expertise</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Procurement governance</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Risk management frameworks</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Programme assurance</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Compliance monitoring</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="bg-slate-900 p-6 rounded-lg">
+                                        <h4 class="font-bold mb-4">Service Highlights:</h4>
+                                        <div class="space-y-4">
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Local Authority Guidance</h5>
+                                                <p class="text-sm text-slate-400">Comprehensive procurement strategy and implementation support</p>
+                                            </div>
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Contract Optimization</h5>
+                                                <p class="text-sm text-slate-400">NEC framework implementation and performance monitoring</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6 grid grid-cols-2 gap-4">
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">£15M</div>
+                                                <div class="text-xs text-slate-400">Contracts Managed</div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">98%</div>
+                                                <div class="text-xs text-slate-400">Compliance Rate</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 overflow-hidden">
+                        <div class="p-8">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 flex items-center justify-center bg-slate-700 rounded-lg mr-4">
+                                    <i class="ri-map-2-line text-xl text-slate-300"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold">GIS Services</h3>
+                            </div>
+                            <div class="grid lg:grid-cols-2 gap-8">
+                                <div>
+                                    <p class="text-slate-300 mb-6">
+                                        Advanced Geographic Information Systems services providing spatial analysis, mapping solutions, and location intelligence for infrastructure planning and asset management across all service areas.
+                                    </p>
+                                    <h4 class="font-bold mb-4">Key Capabilities:</h4>
+                                    <ul class="space-y-2 text-slate-400">
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Spatial data analysis</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Asset mapping solutions</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Location intelligence</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Infrastructure visualization</li>
+                                        <li class="flex items-center"><i class="ri-arrow-right-line mr-2"></i>Real-time monitoring</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="bg-slate-900 p-6 rounded-lg">
+                                        <h4 class="font-bold mb-4">Applications:</h4>
+                                        <div class="space-y-4">
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Infrastructure Planning</h5>
+                                                <p class="text-sm text-slate-400">Spatial analysis for optimal infrastructure placement and planning</p>
+                                            </div>
+                                            <div class="border-l-4 border-slate-600 pl-4">
+                                                <h5 class="font-semibold">Asset Management</h5>
+                                                <p class="text-sm text-slate-400">Comprehensive mapping and monitoring of infrastructure assets</p>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6 grid grid-cols-2 gap-4">
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">500K</div>
+                                                <div class="text-xs text-slate-400">Data Points</div>
+                                            </div>
+                                            <div class="text-center">
+                                                <div class="text-2xl font-bold text-white">24/7</div>
+                                                <div class="text-xs text-slate-400">Monitoring</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="analysis" class="py-20 bg-slate-900">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6">Strategic Market Analysis</h2>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                        Comprehensive analysis using proven strategic frameworks to identify market opportunities and competitive positioning.
+                    </p>
+                </div>
+
+                <div class="space-y-16">
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-grid-line text-slate-300"></i>
+                            </div>
+                            SWOT Analysis
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div class="bg-green-900/20 border border-green-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-green-400 mb-4 flex items-center">
+                                        <i class="ri-thumb-up-line mr-2"></i>Strengths
+                                    </h4>
+                                    <ul class="space-y-2 text-slate-300">
+                                        <li class="flex items-start"><i class="ri-check-line mr-2 mt-1 text-green-400"></i>Established reputation since 2016 with proven track record</li>
+                                        <li class="flex items-start"><i class="ri-check-line mr-2 mt-1 text-green-400"></i>Diverse service portfolio across critical infrastructure sectors</li>
+                                        <li class="flex items-start"><i class="ri-check-line mr-2 mt-1 text-green-400"></i>Strong public sector relationships and government connections</li>
+                                        <li class="flex items-start"><i class="ri-check-line mr-2 mt-1 text-green-400"></i>Expertise in emerging technologies (5G, IoT, smart cities)</li>
+                                        <li class="flex items-start"><i class="ri-check-line mr-2 mt-1 text-green-400"></i>Commitment to sustainability and net-zero goals</li>
+                                        <li class="flex items-start"><i class="ri-check-line mr-2 mt-1 text-green-400"></i>Training Academy for professional development</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-red-900/20 border border-red-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-red-400 mb-4 flex items-center">
+                                        <i class="ri-thumb-down-line mr-2"></i>Weaknesses
+                                    </h4>
+                                    <ul class="space-y-2 text-slate-300">
+                                        <li class="flex items-start"><i class="ri-close-line mr-2 mt-1 text-red-400"></i>Limited geographic presence beyond Northwest England</li>
+                                        <li class="flex items-start"><i class="ri-close-line mr-2 mt-1 text-red-400"></i>Relatively small scale compared to major consultancies</li>
+                                        <li class="flex items-start"><i class="ri-close-line mr-2 mt-1 text-red-400"></i>Heavy dependence on public sector contracts</li>
+                                        <li class="flex items-start"><i class="ri-close-line mr-2 mt-1 text-red-400"></i>Limited international experience and presence</li>
+                                        <li class="flex items-start"><i class="ri-close-line mr-2 mt-1 text-red-400"></i>Resource constraints for large-scale projects</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-blue-900/20 border border-blue-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-blue-400 mb-4 flex items-center">
+                                        <i class="ri-lightbulb-line mr-2"></i>Opportunities
+                                    </h4>
+                                    <ul class="space-y-2 text-slate-300">
+                                        <li class="flex items-start"><i class="ri-arrow-up-line mr-2 mt-1 text-blue-400"></i>Growing demand for digital infrastructure and 5G deployment</li>
+                                        <li class="flex items-start"><i class="ri-arrow-up-line mr-2 mt-1 text-blue-400"></i>Government investment in levelling up and infrastructure</li>
+                                        <li class="flex items-start"><i class="ri-arrow-up-line mr-2 mt-1 text-blue-400"></i>Expansion into other UK regions and international markets</li>
+                                        <li class="flex items-start"><i class="ri-arrow-up-line mr-2 mt-1 text-blue-400"></i>Integration of AI and IoT in infrastructure planning</li>
+                                        <li class="flex items-start"><i class="ri-arrow-up-line mr-2 mt-1 text-blue-400"></i>Climate change adaptation and resilience projects</li>
+                                        <li class="flex items-start"><i class="ri-arrow-up-line mr-2 mt-1 text-blue-400"></i>Private sector partnerships and joint ventures</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-yellow-900/20 border border-yellow-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-yellow-400 mb-4 flex items-center">
+                                        <i class="ri-alert-line mr-2"></i>Threats
+                                    </h4>
+                                    <ul class="space-y-2 text-slate-300">
+                                        <li class="flex items-start"><i class="ri-arrow-down-line mr-2 mt-1 text-yellow-400"></i>Intense competition from large multinational consultancies</li>
+                                        <li class="flex items-start"><i class="ri-arrow-down-line mr-2 mt-1 text-yellow-400"></i>Economic uncertainty affecting public sector spending</li>
+                                        <li class="flex items-start"><i class="ri-arrow-down-line mr-2 mt-1 text-yellow-400"></i>Rapid technological changes requiring constant adaptation</li>
+                                        <li class="flex items-start"><i class="ri-arrow-down-line mr-2 mt-1 text-yellow-400"></i>Skills shortage in specialized technical areas</li>
+                                        <li class="flex items-start"><i class="ri-arrow-down-line mr-2 mt-1 text-yellow-400"></i>Regulatory changes in procurement and planning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-earth-line text-slate-300"></i>
+                            </div>
+                            PESTLE Analysis
+                        </h3>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="bg-slate-900 rounded-lg p-6 border border-slate-700">
+                                <h4 class="font-bold text-slate-300 mb-4 flex items-center">
+                                    <i class="ri-government-line mr-2"></i>Political
+                                </h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Government infrastructure investment priorities</li>
+                                    <li>• Levelling up agenda and regional development</li>
+                                    <li>• Brexit impact on regulations and standards</li>
+                                    <li>• Local authority budget constraints</li>
+                                    <li>• Political stability and policy continuity</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900 rounded-lg p-6 border border-slate-700">
+                                <h4 class="font-bold text-slate-300 mb-4 flex items-center">
+                                    <i class="ri-line-chart-line mr-2"></i>Economic
+                                </h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Post-pandemic economic recovery patterns</li>
+                                    <li>• Interest rates affecting infrastructure investment</li>
+                                    <li>• Public sector spending constraints</li>
+                                    <li>• Private investment in digital infrastructure</li>
+                                    <li>• Regional economic disparities</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900 rounded-lg p-6 border border-slate-700">
+                                <h4 class="font-bold text-slate-300 mb-4 flex items-center">
+                                    <i class="ri-group-line mr-2"></i>Social
+                                </h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Digital divide and inclusion requirements</li>
+                                    <li>• Aging population and accessibility needs</li>
+                                    <li>• Remote working and mobility patterns</li>
+                                    <li>• Community engagement expectations</li>
+                                    <li>• Environmental consciousness</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900 rounded-lg p-6 border border-slate-700">
+                                <h4 class="font-bold text-slate-300 mb-4 flex items-center">
+                                    <i class="ri-cpu-line mr-2"></i>Technological
+                                </h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• 5G deployment and infrastructure requirements</li>
+                                    <li>• AI and machine learning integration</li>
+                                    <li>• IoT and smart city technologies</li>
+                                    <li>• Digital twin and simulation tools</li>
+                                    <li>• Cybersecurity and data protection</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900 rounded-lg p-6 border border-slate-700">
+                                <h4 class="font-bold text-slate-300 mb-4 flex items-center">
+                                    <i class="ri-scales-3-line mr-2"></i>Legal
+                                </h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Planning and development regulations</li>
+                                    <li>• Data protection and privacy laws</li>
+                                    <li>• Health and safety compliance</li>
+                                    <li>• Procurement and contract law</li>
+                                    <li>• Environmental impact assessments</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900 rounded-lg p-6 border border-slate-700">
+                                <h4 class="font-bold text-slate-300 mb-4 flex items-center">
+                                    <i class="ri-leaf-line mr-2"></i>Environmental
+                                </h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Net-zero carbon targets and compliance</li>
+                                    <li>• Climate change adaptation requirements</li>
+                                    <li>• Sustainable development goals</li>
+                                    <li>• Circular economy principles</li>
+                                    <li>• Biodiversity and ecosystem protection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-dashboard-line text-slate-300"></i>
+                            </div>
+                            Ansoff Matrix
+                        </h3>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div class="bg-green-900/20 border border-green-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-green-400 mb-4">Market Penetration</h4>
+                                    <p class="text-slate-300 mb-4">Existing Services → Existing Markets</p>
+                                    <ul class="space-y-2 text-sm text-slate-400">
+                                        <li>• Increase market share in Northwest England</li>
+                                        <li>• Deepen relationships with current clients</li>
+                                        <li>• Expand service delivery within existing contracts</li>
+                                        <li>• Competitive pricing strategies</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-blue-900/20 border border-blue-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-blue-400 mb-4">Market Development</h4>
+                                    <p class="text-slate-300 mb-4">Existing Services → New Markets</p>
+                                    <ul class="space-y-2 text-sm text-slate-400">
+                                        <li>• Geographic expansion across UK regions</li>
+                                        <li>• Target new client segments (private sector)</li>
+                                        <li>• International market entry</li>
+                                        <li>• Online service delivery platforms</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-yellow-900/20 border border-yellow-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-yellow-400 mb-4">Product Development</h4>
+                                    <p class="text-slate-300 mb-4">New Services → Existing Markets</p>
+                                    <ul class="space-y-2 text-sm text-slate-400">
+                                        <li>• AI-powered infrastructure analytics</li>
+                                        <li>• Climate resilience consulting</li>
+                                        <li>• Digital twin development services</li>
+                                        <li>• Cybersecurity for infrastructure</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-red-900/20 border border-red-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-red-400 mb-4">Diversification</h4>
+                                    <p class="text-slate-300 mb-4">New Services → New Markets</p>
+                                    <ul class="space-y-2 text-sm text-slate-400">
+                                        <li>• International infrastructure consulting</li>
+                                        <li>• Technology product development</li>
+                                        <li>• Energy sector consulting</li>
+                                        <li>• Healthcare infrastructure planning</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-medal-line text-slate-300"></i>
+                            </div>
+                            VRIO Analysis
+                        </h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full border-collapse">
+                                <thead>
+                                    <tr class="border-b border-slate-700">
+                                        <th class="text-left p-4 text-slate-300">Resource/Capability</th>
+                                        <th class="text-center p-4 text-slate-300">Valuable</th>
+                                        <th class="text-center p-4 text-slate-300">Rare</th>
+                                        <th class="text-center p-4 text-slate-300">Inimitable</th>
+                                        <th class="text-center p-4 text-slate-300">Organized</th>
+                                        <th class="text-center p-4 text-slate-300">Competitive Advantage</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm">
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">Public Sector Relationships</td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">~</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4 text-green-400">Temporary</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">Multi-disciplinary Expertise</td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">~</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">~</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4 text-yellow-400">Competitive Parity</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">5G and Digital Infrastructure Knowledge</td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4 text-green-400">Sustained</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">Training Academy</td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">~</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4 text-green-400">Temporary</td>
+                                    </tr>
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">Connect Co-working Hub</td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">~</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4 text-green-400">Temporary</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 text-slate-300">Sustainability Commitment</td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">~</span></td>
+                                        <td class="text-center p-4"><span class="text-red-400">✗</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">✓</span></td>
+                                        <td class="text-center p-4 text-yellow-400">Competitive Parity</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-6 flex items-center justify-center space-x-8 text-sm">
+                            <div class="flex items-center">
+                                <span class="text-green-400 mr-2">✓</span>
+                                <span class="text-slate-400">Yes/High</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-yellow-400 mr-2">~</span>
+                                <span class="text-slate-400">Somewhat/Medium</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="text-red-400 mr-2">✗</span>
+                                <span class="text-slate-400">No/Low</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competitive" class="py-20 bg-primary">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6">Competitive Analysis</h2>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                        Comprehensive analysis of the competitive landscape and market positioning across all service sectors.
+                    </p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8">Market Position Mapping</h3>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div>
+                                <div id="competitorChart" class="h-96 bg-slate-900 rounded-lg"></div>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Key Competitors Analysis</h4>
+                                    <div class="space-y-4">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Arup Group</span>
+                                            <div class="flex items-center space-x-2">
+                                                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                                <span class="text-sm text-slate-400">High Capability, High Scale</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Atkins (SNC-Lavalin)</span>
+                                            <div class="flex items-center space-x-2">
+                                                <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
+                                                <span class="text-sm text-slate-400">High Capability, High Scale</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Mott MacDonald</span>
+                                            <div class="flex items-center space-x-2">
+                                                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                                <span class="text-sm text-slate-400">High Capability, Medium Scale</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">CJ Founds Associates</span>
+                                            <div class="flex items-center space-x-2">
+                                                <div class="w-3 h-3 bg-blue-500 rounded-full"></div>
+                                                <span class="text-sm text-slate-400">Medium Capability, Low Scale</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Competitive Advantages</h4>
+                                    <ul class="space-y-2 text-slate-400">
+                                        <li class="flex items-center"><i class="ri-star-line mr-2 text-yellow-400"></i>Specialized 5G and digital infrastructure expertise</li>
+                                        <li class="flex items-center"><i class="ri-star-line mr-2 text-yellow-400"></i>Strong local government relationships</li>
+                                        <li class="flex items-center"><i class="ri-star-line mr-2 text-yellow-400"></i>Agile and responsive service delivery</li>
+                                        <li class="flex items-center"><i class="ri-star-line mr-2 text-yellow-400"></i>Integrated multi-disciplinary approach</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid lg:grid-cols-3 gap-8">
+                        <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                            <h3 class="text-xl font-bold mb-6">Digital Infrastructure</h3>
+                            <div class="space-y-4">
+                                <div class="bg-slate-900 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-slate-300 mb-2">Market Leaders</h4>
+                                    <ul class="text-sm text-slate-400 space-y-1">
+                                        <li>• Arup (Global reach, smart cities)</li>
+                                        <li>• Atkins (Infrastructure integration)</li>
+                                        <li>• PA Consulting (Digital transformation)</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-slate-900 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-slate-300 mb-2">Our Position</h4>
+                                    <p class="text-sm text-slate-400">Strong regional expertise in 5G strategy and implementation with proven track record in Liverpool City Region and Berkshire projects.</p>
+                                </div>
+                                <div class="bg-slate-900 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-slate-300 mb-2">Market Share</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-slate-400">Regional Market</span>
+                                        <span class="text-sm font-semibold">12%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                            <h3 class="text-xl font-bold mb-6">Highways & Transport</h3>
+                            <div class="space-y-4">
+                                <div class="bg-slate-900 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-slate-300 mb-2">Market Leaders</h4>
+                                    <ul class="text-sm text-slate-400 space-y-1">
+                                        <li>• Mott MacDonald (Transport planning)</li>
+                                        <li>• WSP (Infrastructure design)</li>
+                                        <li>• Jacobs (Programme management)</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-slate-900 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-slate-300 mb-2">Our Position</h4>
+                                    <p class="text-sm text-slate-400">Specialized in NEC contracts and procurement support with strong relationships in local authority transport planning.</p>
+                                </div>
+                                <div class="bg-slate-900 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-slate-300 mb-2">Market Share</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-slate-400">Regional Market</span>
+                                        <span class="text-sm font-semibold">8%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                            <h3 class="text-xl font-bold mb-6">Planning & Placemaking</h3>
+                            <div class="space-y-4">
+                                <div class="bg-slate-900 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-slate-300 mb-2">Market Leaders</h4>
+                                    <ul class="text-sm text-slate-400 space-y-1">
+                                        <li>• Arup (Urban planning)</li>
+                                        <li>• Turley (Development planning)</li>
+                                        <li>• Stantec (Place-based design)</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-slate-900 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-slate-300 mb-2">Our Position</h4>
+                                    <p class="text-sm text-slate-400">Integrated approach combining digital mobility with traditional planning, exemplified by Burgess Hill Growth Programme.</p>
+                                </div>
+                                <div class="bg-slate-900 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-slate-300 mb-2">Market Share</h4>
+                                    <div class="flex items-center justify-between">
+                                        <span class="text-sm text-slate-400">Regional Market</span>
+                                        <span class="text-sm font-semibold">6%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8">Competitive Differentiation Matrix</h3>
+                        <div class="overflow-x-auto">
+                            <table class="w-full border-collapse">
+                                <thead>
+                                    <tr class="border-b border-slate-700">
+                                        <th class="text-left p-4 text-slate-300">Factor</th>
+                                        <th class="text-center p-4 text-slate-300">CJ Founds</th>
+                                        <th class="text-center p-4 text-slate-300">Arup</th>
+                                        <th class="text-center p-4 text-slate-300">Atkins</th>
+                                        <th class="text-center p-4 text-slate-300">Mott MacDonald</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-sm">
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">5G/Digital Infrastructure</td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★★☆</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★☆☆</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★☆☆</span></td>
+                                    </tr>
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">Local Government Relations</td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★☆☆</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★★☆</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★★☆</span></td>
+                                    </tr>
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">Project Scale Capability</td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★☆☆</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                    </tr>
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">Agility & Responsiveness</td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★☆☆☆</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★☆☆☆</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★☆☆</span></td>
+                                    </tr>
+                                    <tr class="border-b border-slate-700">
+                                        <td class="p-4 text-slate-300">Sustainability Focus</td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★★☆</span></td>
+                                        <td class="text-center p-4"><span class="text-yellow-400">★★★★☆</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-4 text-slate-300">International Presence</td>
+                                        <td class="text-center p-4"><span class="text-red-400">★☆☆☆☆</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                        <td class="text-center p-4"><span class="text-green-400">★★★★★</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="strategy" class="py-20 bg-slate-900">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6">Implementation Strategy</h2>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                        Comprehensive strategic framework for market expansion across all service sectors with detailed implementation approaches.
+                    </p>
+                </div>
+
+                <div class="space-y-16">
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-target-line text-slate-300"></i>
+                            </div>
+                            Strategic Objectives & Priorities
+                        </h3>
+                        <div class="grid lg:grid-cols-3 gap-8">
+                            <div class="bg-slate-900 p-6 rounded-lg border border-slate-700">
+                                <div class="w-12 h-12 flex items-center justify-center bg-blue-600 rounded-lg mb-4">
+                                    <i class="ri-map-2-line text-xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-4">Geographic Expansion</h4>
+                                <p class="text-slate-300 mb-4">Expand market presence beyond Northwest England to capture opportunities across the UK.</p>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Target Midlands and Southwest regions</li>
+                                    <li>• Establish regional partnerships</li>
+                                    <li>• Develop remote service delivery capabilities</li>
+                                    <li>• Build local market intelligence</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg border border-slate-700">
+                                <div class="w-12 h-12 flex items-center justify-center bg-green-600 rounded-lg mb-4">
+                                    <i class="ri-rocket-line text-xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-4">Service Innovation</h4>
+                                <p class="text-slate-300 mb-4">Develop cutting-edge services leveraging emerging technologies and market demands.</p>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• AI-powered infrastructure analytics</li>
+                                    <li>• Climate resilience consulting</li>
+                                    <li>• Digital twin development</li>
+                                    <li>• Cybersecurity for infrastructure</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg border border-slate-700">
+                                <div class="w-12 h-12 flex items-center justify-center bg-purple-600 rounded-lg mb-4">
+                                    <i class="ri-team-line text-xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-4">Market Diversification</h4>
+                                <p class="text-slate-300 mb-4">Expand client base to include private sector and international opportunities.</p>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Private sector engagement strategy</li>
+                                    <li>• International market entry</li>
+                                    <li>• Strategic partnerships and alliances</li>
+                                    <li>• Joint venture opportunities</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-settings-3-line text-slate-300"></i>
+                            </div>
+                            Implementation Framework
+                        </h3>
+                        <div class="space-y-8">
+                            <div class="grid lg:grid-cols-2 gap-8">
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="text-xl font-bold mb-6">Phase 1: Foundation Building (Months 1-6)</h4>
+                                    <div class="space-y-4">
+                                        <div class="border-l-4 border-blue-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Market Research & Analysis</h5>
+                                            <ul class="text-sm text-slate-400 space-y-1">
+                                                <li>• Comprehensive market mapping in target regions</li>
+                                                <li>• Competitive intelligence gathering</li>
+                                                <li>• Client needs assessment and segmentation</li>
+                                                <li>• Regulatory and compliance landscape analysis</li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-l-4 border-green-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Capability Development</h5>
+                                            <ul class="text-sm text-slate-400 space-y-1">
+                                                <li>• Skills gap analysis and training programs</li>
+                                                <li>• Technology platform upgrades</li>
+                                                <li>• Quality management system enhancement</li>
+                                                <li>• Digital service delivery infrastructure</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="text-xl font-bold mb-6">Phase 2: Market Entry (Months 7-12)</h4>
+                                    <div class="space-y-4">
+                                        <div class="border-l-4 border-yellow-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Strategic Partnerships</h5>
+                                            <ul class="text-sm text-slate-400 space-y-1">
+                                                <li>• Regional partner identification and engagement</li>
+                                                <li>• Joint venture agreements and frameworks</li>
+                                                <li>• Technology partnership development</li>
+                                                <li>• Academic and research collaborations</li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-l-4 border-purple-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Market Penetration</h5>
+                                            <ul class="text-sm text-slate-400 space-y-1">
+                                                <li>• Pilot projects in target markets</li>
+                                                <li>• Client relationship building initiatives</li>
+                                                <li>• Brand awareness and marketing campaigns</li>
+                                                <li>• Thought leadership and content strategy</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid lg:grid-cols-2 gap-8">
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="text-xl font-bold mb-6">Phase 3: Scale & Optimize (Months 13-18)</h4>
+                                    <div class="space-y-4">
+                                        <div class="border-l-4 border-red-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Service Expansion</h5>
+                                            <ul class="text-sm text-slate-400 space-y-1">
+                                                <li>• New service line development and launch</li>
+                                                <li>• Cross-selling to existing clients</li>
+                                                <li>• Service integration and optimization</li>
+                                                <li>• Innovation lab establishment</li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-l-4 border-orange-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Operational Excellence</h5>
+                                            <ul class="text-sm text-slate-400 space-y-1">
+                                                <li>• Process automation and digitization</li>
+                                                <li>• Performance management systems</li>
+                                                <li>• Resource optimization strategies</li>
+                                                <li>• Continuous improvement programs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="text-xl font-bold mb-6">Phase 4: Consolidation (Months 19-24)</h4>
+                                    <div class="space-y-4">
+                                        <div class="border-l-4 border-teal-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Market Leadership</h5>
+                                            <ul class="text-sm text-slate-400 space-y-1">
+                                                <li>• Industry thought leadership positioning</li>
+                                                <li>• Strategic acquisition opportunities</li>
+                                                <li>• International market exploration</li>
+                                                <li>• Sustainable growth model refinement</li>
+                                            </ul>
+                                        </div>
+                                        <div class="border-l-4 border-pink-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Future Planning</h5>
+                                            <ul class="text-sm text-slate-400 space-y-1">
+                                                <li>• Next phase strategic planning</li>
+                                                <li>• Technology roadmap development</li>
+                                                <li>• Talent development and succession</li>
+                                                <li>• Sustainability and ESG integration</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-money-dollar-circle-line text-slate-300"></i>
+                            </div>
+                            Resource Allocation Strategy
+                        </h3>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div>
+                                <div id="resourceChart" class="h-80 bg-slate-900 rounded-lg mb-6"></div>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Investment Priorities</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Technology & Innovation</span>
+                                            <span class="text-slate-400">35%</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Talent Acquisition & Development</span>
+                                            <span class="text-slate-400">25%</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Market Expansion</span>
+                                            <span class="text-slate-400">20%</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Operations & Infrastructure</span>
+                                            <span class="text-slate-400">15%</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Risk Management & Contingency</span>
+                                            <span class="text-slate-400">5%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Financial Projections</h4>
+                                    <div class="grid grid-cols-2 gap-4">
+                                        <div class="text-center">
+                                            <div class="text-2xl font-bold text-green-400">£2.5M</div>
+                                            <div class="text-xs text-slate-400">Total Investment</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="text-2xl font-bold text-blue-400">18 months</div>
+                                            <div class="text-xs text-slate-400">ROI Timeline</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="text-2xl font-bold text-purple-400">45%</div>
+                                            <div class="text-xs text-slate-400">Revenue Growth</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="text-2xl font-bold text-orange-400">12%</div>
+                                            <div class="text-xs text-slate-400">Market Share Target</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-shield-check-line text-slate-300"></i>
+                            </div>
+                            Risk Management Framework
+                        </h3>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div class="bg-red-900/20 border border-red-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-red-400 mb-4">High Risk Factors</h4>
+                                    <ul class="space-y-2 text-slate-300">
+                                        <li class="flex items-start">
+                                            <i class="ri-alert-line mr-2 mt-1 text-red-400"></i>
+                                            <div>
+                                                <div class="font-semibold">Market Competition</div>
+                                                <div class="text-sm text-slate-400">Large consultancies competing on price and scale</div>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="ri-alert-line mr-2 mt-1 text-red-400"></i>
+                                            <div>
+                                                <div class="font-semibold">Resource Constraints</div>
+                                                <div class="text-sm text-slate-400">Limited capacity for simultaneous expansion</div>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="ri-alert-line mr-2 mt-1 text-red-400"></i>
+                                            <div>
+                                                <div class="font-semibold">Economic Uncertainty</div>
+                                                <div class="text-sm text-slate-400">Public sector budget constraints affecting demand</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bg-yellow-900/20 border border-yellow-700 rounded-lg p-6">
+                                    <h4 class="font-bold text-yellow-400 mb-4">Medium Risk Factors</h4>
+                                    <ul class="space-y-2 text-slate-300">
+                                        <li class="flex items-start">
+                                            <i class="ri-error-warning-line mr-2 mt-1 text-yellow-400"></i>
+                                            <div>
+                                                <div class="font-semibold">Technology Evolution</div>
+                                                <div class="text-sm text-slate-400">Rapid changes requiring continuous adaptation</div>
+                                            </div>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="ri-error-warning-line mr-2 mt-1 text-yellow-400"></i>
+                                            <div>
+                                                <div class="font-semibold">Regulatory Changes</div>
+                                                <div class="text-sm text-slate-400">Evolving compliance requirements</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Mitigation Strategies</h4>
+                                    <div class="space-y-4">
+                                        <div class="border-l-4 border-blue-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Diversification Strategy</h5>
+                                            <p class="text-sm text-slate-400">Spread risk across multiple service areas, client types, and geographic regions.</p>
+                                        </div>
+                                        <div class="border-l-4 border-green-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Partnership Approach</h5>
+                                            <p class="text-sm text-slate-400">Strategic alliances to share risks and leverage complementary capabilities.</p>
+                                        </div>
+                                        <div class="border-l-4 border-purple-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Agile Implementation</h5>
+                                            <p class="text-sm text-slate-400">Phased approach allowing for course corrections based on market feedback.</p>
+                                        </div>
+                                        <div class="border-l-4 border-orange-500 pl-4">
+                                            <h5 class="font-semibold text-slate-300 mb-2">Continuous Monitoring</h5>
+                                            <p class="text-sm text-slate-400">Regular risk assessment and strategy adjustment mechanisms.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Contingency Planning</h4>
+                                    <ul class="space-y-2 text-sm text-slate-400">
+                                        <li>• Emergency funding reserves (5% of total budget)</li>
+                                        <li>• Alternative market entry strategies</li>
+                                        <li>• Flexible resource allocation mechanisms</li>
+                                        <li>• Crisis communication protocols</li>
+                                        <li>• Strategic pivot options</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-user-settings-line text-slate-300"></i>
+                            </div>
+                            Stakeholder Engagement Plan
+                        </h3>
+                        <div class="grid lg:grid-cols-3 gap-8">
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <h4 class="font-bold mb-4 text-blue-400">Internal Stakeholders</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h5 class="font-semibold text-slate-300 mb-2">Leadership Team</h5>
+                                        <ul class="text-sm text-slate-400 space-y-1">
+                                            <li>• Monthly strategy review meetings</li>
+                                            <li>• Quarterly performance assessments</li>
+                                            <li>• Strategic decision-making authority</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-slate-300 mb-2">Staff & Teams</h5>
+                                        <ul class="text-sm text-slate-400 space-y-1">
+                                            <li>• Regular communication sessions</li>
+                                            <li>• Skills development programs</li>
+                                            <li>• Change management support</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <h4 class="font-bold mb-4 text-green-400">External Partners</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h5 class="font-semibold text-slate-300 mb-2">Strategic Partners</h5>
+                                        <ul class="text-sm text-slate-400 space-y-1">
+                                            <li>• Joint venture negotiations</li>
+                                            <li>• Partnership agreement development</li>
+                                            <li>• Collaborative project planning</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-slate-300 mb-2">Technology Vendors</h5>
+                                        <ul class="text-sm text-slate-400 space-y-1">
+                                            <li>• Platform integration planning</li>
+                                            <li>• Service level agreements</li>
+                                            <li>• Innovation collaboration</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <h4 class="font-bold mb-4 text-purple-400">Client Stakeholders</h4>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h5 class="font-semibold text-slate-300 mb-2">Existing Clients</h5>
+                                        <ul class="text-sm text-slate-400 space-y-1">
+                                            <li>• Service expansion discussions</li>
+                                            <li>• Feedback and improvement sessions</li>
+                                            <li>• Long-term partnership development</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold text-slate-300 mb-2">Prospective Clients</h5>
+                                        <ul class="text-sm text-slate-400 space-y-1">
+                                            <li>• Market entry presentations</li>
+                                            <li>• Pilot project proposals</li>
+                                            <li>• Relationship building initiatives</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roadmap" class="py-20 bg-primary">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6">Implementation Roadmap</h2>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                        Detailed timeline and milestone tracking for the strategic market expansion initiative across all phases.
+                    </p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8">24-Month Strategic Timeline</h3>
+                        <div class="relative">
+                            <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-slate-600"></div>
+                            <div class="space-y-12">
+                                <div class="relative flex items-start">
+                                    <div class="absolute left-6 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-800"></div>
+                                    <div class="ml-16 bg-slate-900 p-6 rounded-lg w-full">
+                                        <div class="flex items-center justify-between mb-4">
+                                            <h4 class="text-xl font-bold text-blue-400">Phase 1: Foundation Building</h4>
+                                            <span class="text-sm text-slate-400">Months 1-6</span>
+                                        </div>
+                                        <div class="grid lg:grid-cols-2 gap-6">
+                                            <div>
+                                                <h5 class="font-semibold mb-3">Key Milestones:</h5>
+                                                <ul class="space-y-2 text-sm text-slate-400">
+                                                    <li class="flex items-center"><i class="ri-checkbox-circle-line mr-2 text-green-400"></i>Market research completion (Month 2)</li>
+                                                    <li class="flex items-center"><i class="ri-checkbox-circle-line mr-2 text-green-400"></i>Competitive analysis finalization (Month 3)</li>
+                                                    <li class="flex items-center"><i class="ri-checkbox-circle-line mr-2 text-green-400"></i>Technology platform upgrade (Month 4)</li>
+                                                    <li class="flex items-center"><i class="ri-checkbox-circle-line mr-2 text-green-400"></i>Skills assessment and training plan (Month 5)</li>
+                                                    <li class="flex items-center"><i class="ri-checkbox-circle-line mr-2 text-green-400"></i>Quality management enhancement (Month 6)</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold mb-3">Resource Requirements:</h5>
+                                                <div class="space-y-2 text-sm">
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Budget Allocation:</span>
+                                                        <span class="text-slate-300">£450,000</span>
+                                                    </div>
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Team Members:</span>
+                                                        <span class="text-slate-300">12 FTE</span>
+                                                    </div>
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">External Consultants:</span>
+                                                        <span class="text-slate-300">3</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative flex items-start">
+                                    <div class="absolute left-6 w-4 h-4 bg-green-500 rounded-full border-4 border-slate-800"></div>
+                                    <div class="ml-16 bg-slate-900 p-6 rounded-lg w-full">
+                                        <div class="flex items-center justify-between mb-4">
+                                            <h4 class="text-xl font-bold text-green-400">Phase 2: Market Entry</h4>
+                                            <span class="text-sm text-slate-400">Months 7-12</span>
+                                        </div>
+                                        <div class="grid lg:grid-cols-2 gap-6">
+                                            <div>
+                                                <h5 class="font-semibold mb-3">Key Milestones:</h5>
+                                                <ul class="space-y-2 text-sm text-slate-400">
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Regional partnerships established (Month 8)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>First pilot projects launched (Month 9)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Brand awareness campaign (Month 10)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Client relationship building (Month 11)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Market penetration assessment (Month 12)</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold mb-3">Resource Requirements:</h5>
+                                                <div class="space-y-2 text-sm">
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Budget Allocation:</span>
+                                                        <span class="text-slate-300">£750,000</span>
+                                                    </div>
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Team Members:</span>
+                                                        <span class="text-slate-300">18 FTE</span>
+                                                    </div>
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Marketing Budget:</span>
+                                                        <span class="text-slate-300">£150,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative flex items-start">
+                                    <div class="absolute left-6 w-4 h-4 bg-yellow-500 rounded-full border-4 border-slate-800"></div>
+                                    <div class="ml-16 bg-slate-900 p-6 rounded-lg w-full">
+                                        <div class="flex items-center justify-between mb-4">
+                                            <h4 class="text-xl font-bold text-yellow-400">Phase 3: Scale & Optimize</h4>
+                                            <span class="text-sm text-slate-400">Months 13-18</span>
+                                        </div>
+                                        <div class="grid lg:grid-cols-2 gap-6">
+                                            <div>
+                                                <h5 class="font-semibold mb-3">Key Milestones:</h5>
+                                                <ul class="space-y-2 text-sm text-slate-400">
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>New service lines launched (Month 14)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Cross-selling initiatives (Month 15)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Process automation implementation (Month 16)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Performance optimization (Month 17)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Innovation lab establishment (Month 18)</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold mb-3">Resource Requirements:</h5>
+                                                <div class="space-y-2 text-sm">
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Budget Allocation:</span>
+                                                        <span class="text-slate-300">£900,000</span>
+                                                    </div>
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Team Members:</span>
+                                                        <span class="text-slate-300">25 FTE</span>
+                                                    </div>
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Technology Investment:</span>
+                                                        <span class="text-slate-300">£200,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative flex items-start">
+                                    <div class="absolute left-6 w-4 h-4 bg-purple-500 rounded-full border-4 border-slate-800"></div>
+                                    <div class="ml-16 bg-slate-900 p-6 rounded-lg w-full">
+                                        <div class="flex items-center justify-between mb-4">
+                                            <h4 class="text-xl font-bold text-purple-400">Phase 4: Consolidation</h4>
+                                            <span class="text-sm text-slate-400">Months 19-24</span>
+                                        </div>
+                                        <div class="grid lg:grid-cols-2 gap-6">
+                                            <div>
+                                                <h5 class="font-semibold mb-3">Key Milestones:</h5>
+                                                <ul class="space-y-2 text-sm text-slate-400">
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Market leadership positioning (Month 20)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Strategic acquisition evaluation (Month 21)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>International market exploration (Month 22)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Sustainable growth model (Month 23)</li>
+                                                    <li class="flex items-center"><i class="ri-time-line mr-2 text-yellow-400"></i>Next phase planning (Month 24)</li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-semibold mb-3">Resource Requirements:</h5>
+                                                <div class="space-y-2 text-sm">
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Budget Allocation:</span>
+                                                        <span class="text-slate-300">£400,000</span>
+                                                    </div>
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Team Members:</span>
+                                                        <span class="text-slate-300">30 FTE</span>
+                                                    </div>
+                                                    <div class="flex justify-between">
+                                                        <span class="text-slate-400">Strategic Reserve:</span>
+                                                        <span class="text-slate-300">£125,000</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8">Critical Path Analysis</h3>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div>
+                                <div id="criticalPathChart" class="h-80 bg-slate-900 rounded-lg"></div>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Critical Dependencies</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center">
+                                            <div class="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
+                                            <div>
+                                                <div class="font-semibold text-slate-300">Market Research → Partnership Development</div>
+                                                <div class="text-sm text-slate-400">Foundation for strategic alliances</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div class="w-3 h-3 bg-orange-500 rounded-full mr-3"></div>
+                                            <div>
+                                                <div class="font-semibold text-slate-300">Technology Upgrade → Service Launch</div>
+                                                <div class="text-sm text-slate-400">Platform readiness for new offerings</div>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center">
+                                            <div class="w-3 h-3 bg-yellow-500 rounded-full mr-3"></div>
+                                            <div>
+                                                <div class="font-semibold text-slate-300">Team Training → Market Entry</div>
+                                                <div class="text-sm text-slate-400">Capability development prerequisite</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Risk Mitigation Points</h4>
+                                    <ul class="space-y-2 text-sm text-slate-400">
+                                        <li>• Monthly progress reviews and adjustments</li>
+                                        <li>• Quarterly stakeholder alignment sessions</li>
+                                        <li>• Bi-annual strategic reassessment</li>
+                                        <li>• Continuous market monitoring</li>
+                                        <li>• Flexible resource reallocation mechanisms</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8">Progress Tracking Dashboard</h3>
+                        <div class="grid lg:grid-cols-4 gap-6">
+                            <div class="bg-slate-900 p-6 rounded-lg text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-blue-600 rounded-full flex items-center justify-center">
+                                    <i class="ri-line-chart-line text-2xl text-white"></i>
+                                </div>
+                                <div class="text-2xl font-bold text-blue-400 mb-2">25%</div>
+                                <div class="text-sm text-slate-400">Overall Progress</div>
+                                <div class="mt-3 w-full bg-slate-700 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full w-1/4"></div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-green-600 rounded-full flex items-center justify-center">
+                                    <i class="ri-funds-line text-2xl text-white"></i>
+                                </div>
+                                <div class="text-2xl font-bold text-green-400 mb-2">£625K</div>
+                                <div class="text-sm text-slate-400">Budget Utilized</div>
+                                <div class="mt-3 w-full bg-slate-700 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full w-1/4"></div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-purple-600 rounded-full flex items-center justify-center">
+                                    <i class="ri-calendar-check-line text-2xl text-white"></i>
+                                </div>
+                                <div class="text-2xl font-bold text-purple-400 mb-2">12</div>
+                                <div class="text-sm text-slate-400">Milestones Completed</div>
+                                <div class="mt-3 w-full bg-slate-700 rounded-full h-2">
+                                    <div class="bg-purple-500 h-2 rounded-full w-1/3"></div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg text-center">
+                                <div class="w-16 h-16 mx-auto mb-4 bg-orange-600 rounded-full flex items-center justify-center">
+                                    <i class="ri-alert-line text-2xl text-white"></i>
+                                </div>
+                                <div class="text-2xl font-bold text-orange-400 mb-2">3</div>
+                                <div class="text-sm text-slate-400">Active Risks</div>
+                                <div class="mt-3 w-full bg-slate-700 rounded-full h-2">
+                                    <div class="bg-orange-500 h-2 rounded-full w-1/5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kpis" class="py-20 bg-slate-900">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6">Key Performance Indicators</h2>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                        Comprehensive KPI framework to measure success and track progress across all strategic objectives and market expansion initiatives.
+                    </p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="grid lg:grid-cols-4 gap-6">
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-blue-600 rounded-full flex items-center justify-center">
+                                <i class="ri-pie-chart-line text-2xl text-white"></i>
+                            </div>
+                            <div class="text-3xl font-bold text-blue-400 mb-2">45%</div>
+                            <div class="text-sm text-slate-300 font-semibold mb-2">Revenue Growth</div>
+                            <div class="text-xs text-slate-400">Target by Month 24</div>
+                            <div class="mt-4 w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full w-1/3"></div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-green-600 rounded-full flex items-center justify-center">
+                                <i class="ri-map-pin-range-line text-2xl text-white"></i>
+                            </div>
+                            <div class="text-3xl font-bold text-green-400 mb-2">12%</div>
+                            <div class="text-sm text-slate-300 font-semibold mb-2">Market Share</div>
+                            <div class="text-xs text-slate-400">Regional Target</div>
+                            <div class="mt-4 w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full w-1/4"></div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-purple-600 rounded-full flex items-center justify-center">
+                                <i class="ri-user-add-line text-2xl text-white"></i>
+                            </div>
+                            <div class="text-3xl font-bold text-purple-400 mb-2">150</div>
+                            <div class="text-sm text-slate-300 font-semibold mb-2">New Clients</div>
+                            <div class="text-xs text-slate-400">24-Month Target</div>
+                            <div class="mt-4 w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-purple-500 h-2 rounded-full w-1/5"></div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                            <div class="w-16 h-16 mx-auto mb-4 bg-orange-600 rounded-full flex items-center justify-center">
+                                <i class="ri-team-line text-2xl text-white"></i>
+                            </div>
+                            <div class="text-3xl font-bold text-orange-400 mb-2">30</div>
+                            <div class="text-sm text-slate-300 font-semibold mb-2">Team Growth</div>
+                            <div class="text-xs text-slate-400">FTE by Month 24</div>
+                            <div class="mt-4 w-full bg-slate-700 rounded-full h-2">
+                                <div class="bg-orange-500 h-2 rounded-full w-2/5"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8">Financial Performance KPIs</h3>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div>
+                                <div id="financialKPIChart" class="h-80 bg-slate-900 rounded-lg"></div>
+                            </div>
+                            <div class="space-y-6">
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Revenue Metrics</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Annual Recurring Revenue (ARR)</span>
+                                            <span class="text-green-400 font-semibold">£3.2M</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Revenue per Employee</span>
+                                            <span class="text-blue-400 font-semibold">£145K</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Gross Profit Margin</span>
+                                            <span class="text-purple-400 font-semibold">68%</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">EBITDA Margin</span>
+                                            <span class="text-orange-400 font-semibold">22%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Growth Targets</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Year 1 Revenue Growth</span>
+                                            <span class="text-green-400 font-semibold">25%</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Year 2 Revenue Growth</span>
+                                            <span class="text-blue-400 font-semibold">45%</span>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">ROI Timeline</span>
+                                            <span class="text-purple-400 font-semibold">18 months</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8">Operational Excellence KPIs</h3>
+                        <div class="grid lg:grid-cols-3 gap-8">
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <h4 class="font-bold mb-4 text-blue-400">Client Satisfaction</h4>
+                                <div class="space-y-4">
+                                    <div class="text-center">
+                                        <div class="text-4xl font-bold text-blue-400 mb-2">92%</div>
+                                        <div class="text-sm text-slate-400">Current Satisfaction Rate</div>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-slate-400">Target:</span>
+                                            <span class="text-slate-300">95%</span>
+                                        </div>
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-slate-400">NPS Score:</span>
+                                            <span class="text-slate-300">+65</span> ```
+                                        </div>
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-slate-400">Retention Rate:</span>
+                                            <span class="text-slate-300">88%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <h4 class="font-bold mb-4 text-green-400">Project Delivery</h4>
+                                <div class="space-y-4">
+                                    <div class="text-center">
+                                        <div class="text-4xl font-bold text-green-400 mb-2">96%</div>
+                                        <div class="text-sm text-slate-400">On-time Delivery Rate</div>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-slate-400">On Budget:</span>
+                                            <span class="text-slate-300">94%</span>
+                                        </div>
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-slate-400">Quality Score:</span>
+                                            <span class="text-slate-300">4.6/5</span>
+                                        </div>
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-slate-400">Rework Rate:</span>
+                                            <span class="text-slate-300">3%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <h4 class="font-bold mb-4 text-purple-400">Team Performance</h4>
+                                <div class="space-y-4">
+                                    <div class="text-center">
+                                        <div class="text-4xl font-bold text-purple-400 mb-2">89%</div>
+                                        <div class="text-sm text-slate-400">Employee Satisfaction</div>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-slate-400">Retention Rate:</span>
+                                            <span class="text-slate-300">92%</span>
+                                        </div>
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-slate-400">Utilization Rate:</span>
+                                            <span class="text-slate-300">78%</span>
+                                        </div>
+                                        <div class="flex justify-between text-sm">
+                                            <span class="text-slate-400">Training Hours:</span>
+                                            <span class="text-slate-300">40/year</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8">Market Expansion KPIs</h3>
+                        <div class="grid lg:grid-cols-2 gap-8">
+                            <div class="space-y-6">
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Geographic Expansion</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">New Regions Entered</span>
+                                            <div class="flex items-center">
+                                                <span class="text-green-400 font-semibold mr-2">2</span>
+                                                <span class="text-xs text-slate-400">/4 target</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Regional Market Share</span>
+                                            <div class="flex items-center">
+                                                <span class="text-blue-400 font-semibold mr-2">8.5%</span>
+                                                <span class="text-xs text-slate-400">/12% target</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Partner Relationships</span>
+                                            <div class="flex items-center">
+                                                <span class="text-purple-400 font-semibold mr-2">12</span>
+                                                <span class="text-xs text-slate-400">/20 target</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900 p-6 rounded-lg">
+                                    <h4 class="font-bold mb-4">Service Innovation</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">New Services Launched</span>
+                                            <div class="flex items-center">
+                                                <span class="text-green-400 font-semibold mr-2">3</span>
+                                                <span class="text-xs text-slate-400">/5 planned</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">Innovation Revenue %</span>
+                                            <div class="flex items-center">
+                                                <span class="text-blue-400 font-semibold mr-2">15%</span>
+                                                <span class="text-xs text-slate-400">/25% target</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <span class="text-slate-300">R&D Investment</span>
+                                            <div class="flex items-center">
+                                                <span class="text-purple-400 font-semibold mr-2">8%</span>
+                                                <span class="text-xs text-slate-400">of revenue</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div id="marketExpansionChart" class="h-80 bg-slate-900 rounded-lg"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8">Sustainability & ESG KPIs</h3>
+                        <div class="grid lg:grid-cols-4 gap-6">
+                            <div class="bg-slate-900 p-6 rounded-lg text-center">
+                                <div class="w-12 h-12 mx-auto mb-4 bg-green-600 rounded-full flex items-center justify-center">
+                                    <i class="ri-leaf-line text-xl text-white"></i>
+                                </div>
+                                <div class="text-2xl font-bold text-green-400 mb-2">35%</div>
+                                <div class="text-sm text-slate-300 font-semibold mb-2">Carbon Reduction</div>
+                                <div class="text-xs text-slate-400">Target: 50% by 2025</div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg text-center">
+                                <div class="w-12 h-12 mx-auto mb-4 bg-blue-600 rounded-full flex items-center justify-center">
+                                    <i class="ri-recycle-line text-xl text-white"></i>
+                                </div>
+                                <div class="text-2xl font-bold text-blue-400 mb-2">85%</div>
+                                <div class="text-sm text-slate-300 font-semibold mb-2">Sustainable Projects</div>
+                                <div class="text-xs text-slate-400">Projects with ESG focus</div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg text-center">
+                                <div class="w-12 h-12 mx-auto mb-4 bg-purple-600 rounded-full flex items-center justify-center">
+                                    <i class="ri-group-line text-xl text-white"></i>
+                                </div>
+                                <div class="text-2xl font-bold text-purple-400 mb-2">42%</div>
+                                <div class="text-sm text-slate-300 font-semibold mb-2">Diversity Ratio</div>
+                                <div class="text-xs text-slate-400">Women in leadership</div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg text-center">
+                                <div class="w-12 h-12 mx-auto mb-4 bg-orange-600 rounded-full flex items-center justify-center">
+                                    <i class="ri-heart-line text-xl text-white"></i>
+                                </div>
+                                <div class="text-2xl font-bold text-orange-400 mb-2">96</div>
+                                <div class="text-sm text-slate-300 font-semibold mb-2">Community Hours</div>
+                                <div class="text-xs text-slate-400">Per employee/year</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusion" class="py-20 bg-primary">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-6">Strategic Conclusions & Recommendations</h2>
+                    <p class="text-xl text-slate-300 max-w-3xl mx-auto">
+                        Comprehensive analysis summary with actionable recommendations for successful market expansion and sustainable growth.
+                    </p>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-lightbulb-line text-slate-300"></i>
+                            </div>
+                            Key Strategic Insights
+                        </h3>
+                        <div class="grid lg:grid-cols-3 gap-8">
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <div class="w-12 h-12 flex items-center justify-center bg-green-600 rounded-lg mb-4">
+                                    <i class="ri-trophy-line text-xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-4 text-green-400">Market Position Strength</h4>
+                                <p class="text-slate-300 mb-4">
+                                    CJ Founds Associates has established a strong competitive position in the Northwest England market with specialized expertise in digital infrastructure and 5G technologies.
+                                </p>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Unique 5G and digital infrastructure expertise</li>
+                                    <li>• Strong public sector relationships and trust</li>
+                                    <li>• Proven track record in complex projects</li>
+                                    <li>• Sustainable and net-zero commitment advantage</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <div class="w-12 h-12 flex items-center justify-center bg-blue-600 rounded-lg mb-4">
+                                    <i class="ri-rocket-line text-xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-4 text-blue-400">Growth Opportunity Landscape</h4>
+                                <p class="text-slate-300 mb-4">
+                                    Significant opportunities exist for expansion across the UK, driven by government infrastructure investment and digital transformation initiatives.
+                                </p>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• £4.8B government infrastructure spending</li>
+                                    <li>• Levelling up agenda creating regional opportunities</li>
+                                    <li>• Private sector digital transformation demand</li>
+                                    <li>• Climate resilience and net-zero projects</li>
+                                </ul>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <div class="w-12 h-12 flex items-center justify-center bg-purple-600 rounded-lg mb-4">
+                                    <i class="ri-shield-check-line text-xl text-white"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-4 text-purple-400">Risk Management Priority</h4>
+                                <p class="text-slate-300 mb-4">
+                                    Strategic expansion requires careful risk management, particularly around resource constraints and competitive pressures from larger firms.
+                                </p>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Phased approach to minimize exposure</li>
+                                    <li>• Strategic partnerships for resource sharing</li>
+                                    <li>• Focus on differentiated service offerings</li>
+                                    <li>• Continuous capability development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-target-line text-slate-300"></i>
+                            </div>
+                            Strategic Recommendations
+                        </h3>
+                        <div class="space-y-8">
+                            <div class="bg-slate-900 p-6 rounded-lg border-l-4 border-green-500">
+                                <h4 class="text-xl font-bold mb-4 text-green-400">Priority 1: Leverage Core Strengths</h4>
+                                <p class="text-slate-300 mb-4">
+                                    Build on existing competitive advantages in digital infrastructure and public sector relationships to establish market leadership position.
+                                </p>
+                                <div class="grid lg:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-semibold mb-3">Immediate Actions:</h5>
+                                        <ul class="space-y-2 text-sm text-slate-400">
+                                            <li>• Develop 5G expertise into signature service offering</li>
+                                            <li>• Create thought leadership content and publications</li>
+                                            <li>• Establish advisory panels with key public sector leaders</li>
+                                            <li>• Build case study repository for marketing</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold mb-3">Success Metrics:</h5>
+                                        <ul class="space-y-2 text-sm text-slate-400">
+                                            <li>• 25% increase in project value within 12 months</li>
+                                            <li>• Recognition as 5G infrastructure specialist</li>
+                                            <li>• 3 major thought leadership publications</li>
+                                            <li>• 50% increase in inbound inquiries</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg border-l-4 border-blue-500">
+                                <h4 class="text-xl font-bold mb-4 text-blue-400">Priority 2: Strategic Market Expansion</h4>
+                                <p class="text-slate-300 mb-4">
+                                    Carefully planned geographic expansion to high-potential regions with strong government investment and infrastructure needs.
+                                </p>
+                                <div class="grid lg:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-semibold mb-3">Target Markets:</h5>
+                                        <ul class="space-y-2 text-sm text-slate-400">
+                                            <li>• Midlands region (Birmingham, Coventry corridor)</li>
+                                            <li>• Southwest England (Bristol, Bath, Exeter)</li>
+                                            <li>• Yorkshire and Humber (Leeds, Sheffield)</li>
+                                            <li>• Scotland central belt (Edinburgh, Glasgow)</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold mb-3">Entry Strategy:</h5>
+                                        <ul class="space-y-2 text-sm text-slate-400">
+                                            <li>• Partner with regional consultancies</li>
+                                            <li>• Pilot projects to establish presence</li>
+                                            <li>• Local government relationship building</li>
+                                            <li>• Remote service delivery capabilities</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg border-l-4 border-purple-500">
+                                <h4 class="text-xl font-bold mb-4 text-purple-400">Priority 3: Service Innovation & Diversification</h4>
+                                <p class="text-slate-300 mb-4">
+                                    Develop new service offerings that leverage emerging technologies and address evolving market needs for sustainable infrastructure.
+                                </p>
+                                <div class="grid lg:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-semibold mb-3">Innovation Areas:</h5>
+                                        <ul class="space-y-2 text-sm text-slate-400">
+                                            <li>• AI-powered infrastructure analytics</li>
+                                            <li>• Digital twin development and management</li>
+                                            <li>• Climate resilience and adaptation planning</li>
+                                            <li>• Cybersecurity for critical infrastructure</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold mb-3">Development Approach:</h5>
+                                        <ul class="space-y-2 text-sm text-slate-400">
+                                            <li>• Innovation lab establishment</li>
+                                            <li>• University research partnerships</li>
+                                            <li>• Technology vendor collaborations</li>
+                                            <li>• Client co-development projects</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg border-l-4 border-orange-500">
+                                <h4 class="text-xl font-bold mb-4 text-orange-400">Priority 4: Organizational Capability Building</h4>
+                                <p class="text-slate-300 mb-4">
+                                    Invest in talent, technology, and organizational capabilities to support sustainable growth and market leadership.
+                                </p>
+                                <div class="grid lg:grid-cols-2 gap-6">
+                                    <div>
+                                        <h5 class="font-semibold mb-3">Capability Areas:</h5>
+                                        <ul class="space-y-2 text-sm text-slate-400">
+                                            <li>• Advanced digital skills and certifications</li>
+                                            <li>• Project management and delivery excellence</li>
+                                            <li>• Client relationship and business development</li>
+                                            <li>• Quality management and assurance systems</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h5 class="font-semibold mb-3">Investment Strategy:</h5>
+                                        <ul class="space-y-2 text-sm text-slate-400">
+                                            <li>• 25% of revenue invested in capability development</li>
+                                            <li>• Strategic recruitment of senior expertise</li>
+                                            <li>• Technology platform modernization</li>
+                                            <li>• Continuous learning and development programs</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-2xl border border-slate-700 p-8">
+                        <h3 class="text-2xl font-bold mb-8 flex items-center">
+                            <div class="w-8 h-8 flex items-center justify-center bg-slate-700 rounded mr-3">
+                                <i class="ri-road-map-line text-slate-300"></i>
+                            </div>
+                            Implementation Roadmap Summary
+                        </h3>
+                        <div class="grid lg:grid-cols-4 gap-6">
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <div class="w-12 h-12 flex items-center justify-center bg-blue-600 rounded-lg mb-4">
+                                    <span class="text-white font-bold">Q1</span>
+                                </div>
+                                <h4 class="font-bold mb-3 text-blue-400">Foundation (Months 1-6)</h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Market research completion</li>
+                                    <li>• Technology platform upgrade</li>
+                                    <li>• Team capability assessment</li>
+                                    <li>• Quality system enhancement</li>
+                                </ul>
+                                <div class="mt-4 text-center">
+                                    <div class="text-lg font-bold text-blue-400">£450K</div>
+                                    <div class="text-xs text-slate-400">Investment</div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <div class="w-12 h-12 flex items-center justify-center bg-green-600 rounded-lg mb-4">
+                                    <span class="text-white font-bold">Q2</span>
+                                </div>
+                                <h4 class="font-bold mb-3 text-green-400">Market Entry (Months 7-12)</h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Partnership establishment</li>
+                                    <li>• Pilot project launches</li>
+                                    <li>• Brand awareness campaigns</li>
+                                    <li>• Client relationship building</li>
+                                </ul>
+                                <div class="mt-4 text-center">
+                                    <div class="text-lg font-bold text-green-400">£750K</div>
+                                    <div class="text-xs text-slate-400">Investment</div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <div class="w-12 h-12 flex items-center justify-center bg-purple-600 rounded-lg mb-4">
+                                    <span class="text-white font-bold">Q3</span>
+                                </div>
+                                <h4 class="font-bold mb-3 text-purple-400">Scale & Optimize (Months 13-18)</h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Service expansion launch</li>
+                                    <li>• Cross-selling initiatives</li>
+                                    <li>• Process automation</li>
+                                    <li>• Innovation lab setup</li>
+                                </ul>
+                                <div class="mt-4 text-center">
+                                    <div class="text-lg font-bold text-purple-400">£900K</div>
+                                    <div class="text-xs text-slate-400">Investment</div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-900 p-6 rounded-lg">
+                                <div class="w-12 h-12 flex items-center justify-center bg-orange-600 rounded-lg mb-4">
+                                    <span class="text-white font-bold">Q4</span>
+                                </div>
+                                <h4 class="font-bold mb-3 text-orange-400">Consolidation (Months 19-24)</h4>
+                                <ul class="space-y-2 text-sm text-slate-400">
+                                    <li>• Market leadership positioning</li>
+                                    <li>• Strategic acquisitions</li>
+                                    <li>• International exploration</li>
+                                    <li>• Future planning</li>
+                                </ul>
+                                <div class="mt-4 text-center">
+                                    <div class="text-lg font-bold text-orange-400">£400K</div>
+                                    <div class="text-xs text-slate-400">Investment</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 bg-slate-900 p-6 rounded-lg text-center">
+                            <div class="grid grid-cols-3 gap-8">
+                                <div>
+                                    <div class="text-3xl font-bold text-green-400 mb-2">£2.5M</div>
+                                    <div class="text-sm text-slate-400">Total Investment</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-bold text-blue-400 mb-2">45%</div>
+                                    <div class="text-sm text-slate-400">Revenue Growth Target</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-bold text-purple-400 mb-2">18M</div>
+                                    <div class="text-sm text-slate-400">ROI Timeline (Months)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-r from-slate-800 to-slate-700 rounded-2xl border border-slate-600 p-8 text-center">
+                        <h3 class="text-2xl font-bold mb-6">Final Strategic Assessment</h3>
+                        <p class="text-xl text-slate-300 leading-relaxed max-w-4xl mx-auto mb-8">
+                            CJ Founds Associates is well-positioned for strategic market expansion, with strong competitive advantages in digital infrastructure and public sector relationships. The recommended four-phase implementation approach provides a structured pathway to achieve 45% revenue growth while managing risks through strategic partnerships and phased investment.
+                        </p>
+                        <div class="flex justify-center space-x-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-green-400 mb-1">High</div>
+                                <div class="text-sm text-slate-400">Success Probability</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-blue-400 mb-1">Medium</div>
+                                <div class="text-sm text-slate-400">Risk Level</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-purple-400 mb-1">Strong</div>
+                                <div class="text-sm text-slate-400">Market Position</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-fade').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Initialize Charts
+        window.addEventListener('load', function() {
+            // Competitor positioning chart
+            const competitorChart = echarts.init(document.getElementById('competitorChart'));
+            const competitorOption = {
+                backgroundColor: 'transparent',
+                title: {
+                    text: 'Market Position Matrix',
+                    textStyle: { color: '#e2e8f0' }
+                },
+                xAxis: {
+                    name: 'Market Scale',
+                    nameTextStyle: { color: '#94a3b8' },
+                    type: 'value',
+                    axisLabel: { color: '#94a3b8' },
+                    axisLine: { lineStyle: { color: '#475569' } },
+                    splitLine: { lineStyle: { color: '#334155' } }
+                },
+                yAxis: {
+                    name: 'Technical Capability',
+                    nameTextStyle: { color: '#94a3b8' },
+                    type: 'value',
+                    axisLabel: { color: '#94a3b8' },
+                    axisLine: { lineStyle: { color: '#475569' } },
+                    splitLine: { lineStyle: { color: '#334155' } }
+                },
+                series: [{
+                    data: [
+                        {value: [90, 95], name: 'Arup Group', itemStyle: {color: '#ef4444'}},
+                        {value: [85, 90], name: 'Atkins', itemStyle: {color: '#f97316'}},
+                        {value: [75, 85], name: 'Mott MacDonald', itemStyle: {color: '#eab308'}},
+                        {value: [35, 75], name: 'CJ Founds Associates', itemStyle: {color: '#3b82f6'}}
+                    ],
+                    type: 'scatter',
+                    symbolSize: 60,
+                    label: {
+                        show: true,
+                        position: 'top',
+                        color: '#e2e8f0'
+                    }
+                }]
+            };
+            competitorChart.setOption(competitorOption);
+
+            // Resource allocation chart
+            const resourceChart = echarts.init(document.getElementById('resourceChart'));
+            const resourceOption = {
+                backgroundColor: 'transparent',
+                title: {
+                    text: 'Investment Allocation',
+                    textStyle: { color: '#e2e8f0' }
+                },
+                series: [{
+                    type: 'pie',
+                    data: [
+                        {value: 35, name: 'Technology & Innovation', itemStyle: {color: '#3b82f6'}},
+                        {value: 25, name: 'Talent Development', itemStyle: {color: '#10b981'}},
+                        {value: 20, name: 'Market Expansion', itemStyle: {color: '#8b5cf6'}},
+                        {value: 15, name: 'Operations', itemStyle: {color: '#f59e0b'}},
+                        {value: 5, name: 'Risk Management', itemStyle: {color: '#ef4444'}}
+                    ],
+                    radius: '60%',
+                    label: {
+                        color: '#e2e8f0'
+                    }
+                }]
+            };
+            resourceChart.setOption(resourceOption);
+
+            // Critical path chart
+            const criticalPathChart = echarts.init(document.getElementById('criticalPathChart'));
+            const criticalPathOption = {
+                backgroundColor: 'transparent',
+                title: {
+                    text: 'Project Timeline',
+                    textStyle: { color: '#e2e8f0' }
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['M1', 'M3', 'M6', 'M9', 'M12', 'M15', 'M18', 'M21', 'M24'],
+                    axisLabel: { color: '#94a3b8' },
+                    axisLine: { lineStyle: { color: '#475569' } }
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLabel: { color: '#94a3b8' },
+                    axisLine: { lineStyle: { color: '#475569' } },
+                    splitLine: { lineStyle: { color: '#334155' } }
+                },
+                series: [
+                    {
+                        name: 'Phase Progress',
+                        type: 'line',
+                        data: [0, 15, 25, 45, 60, 75, 85, 95, 100],
+                        lineStyle: { color: '#3b82f6' },
+                        itemStyle: { color: '#3b82f6' }
+                    }
+                ]
+            };
+            criticalPathChart.setOption(criticalPathOption);
+
+            // Financial KPI chart
+            const financialKPIChart = echarts.init(document.getElementById('financialKPIChart'));
+            const financialKPIOption = {
+                backgroundColor: 'transparent',
+                title: {
+                    text: 'Revenue Projection',
+                    textStyle: { color: '#e2e8f0' }
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['Year 0', 'Year 1', 'Year 2', 'Year 3'],
+                    axisLabel: { color: '#94a3b8' },
+                    axisLine: { lineStyle: { color: '#475569' } }
+                },
+                yAxis: {
+                    type: 'value',
+                    axisLabel: { color: '#94a3b8', formatter: '£{value}M' },
+                    axisLine: { lineStyle: { color: '#475569' } },
+                    splitLine: { lineStyle: { color: '#334155' } }
+                },
+                series: [{
+                    name: 'Revenue',
+                    type: 'bar',
+                    data: [2.2, 2.8, 4.1, 5.9],
+                    itemStyle: { color: '#10b981' }
+                }]
+            };
+            financialKPIChart.setOption(financialKPIOption);
+            // Market expansion chart
+            const marketExpansionChart = echarts.init(document.getElementById('marketExpansionChart'));
+            const marketExpansionOption = {
+                backgroundColor: 'transparent',
+                title: {
+                    text: 'Market Expansion Progress',
+                    textStyle: { color: '#e2e8f0' }
+                },
+                radar: {
+                    indicator: [
+                        { name: 'Geographic Reach', max: 100 },
+                        { name: 'Service Portfolio', max: 100 },
+                        { name: 'Client Diversity', max: 100 },
+                        { name: 'Market Share', max: 100 },
+                        { name: 'Innovation Index', max: 100 }
+                    ],
+                    axisName: { color: '#94a3b8' },
+                    axisLine: { lineStyle: { color: '#475569' } },
+                    splitLine: { lineStyle: { color: '#334155' } }
+                },
+                series: [{
+                    name: 'Current vs Target',
+                    type: 'radar',
+                    data: [
+                        {
+                            value: [25, 70, 40, 35, 60],
+                            name: 'Current',
+                            itemStyle: { color: '#3b82f6' },
+                            areaStyle: { color: 'rgba(59, 130, 246, 0.2)' }
+                        },
+                        {
+                            value: [80, 90, 75, 70, 85],
+                            name: 'Target',
+                            itemStyle: { color: '#10b981' },
+                            areaStyle: { color: 'rgba(16, 185, 129, 0.2)' }
+                        }
+                    ]
+                }]
+            };
+            marketExpansionChart.setOption(marketExpansionOption);
+            // Responsive charts
+            window.addEventListener('resize', function() {
+                competitorChart.resize();
+                resourceChart.resize();
+                criticalPathChart.resize();
+                financialKPIChart.resize();
+                marketExpansionChart.resize();
+            });
+        });
+    </script>
+</body>
+</html>
